@@ -32,7 +32,7 @@ function Get-FilesAndFolders
         [string]$parentPath
     )
 
-    $items = Get-ChildItem -Path $path
+    $items = Get-ChildItem -Path $path -Force
 
     foreach ($item in $items)
     {
